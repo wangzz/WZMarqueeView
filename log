@@ -1,0 +1,235 @@
+pod setup
+Setting up CocoaPods master repo
+Updating caa3650..bb5faff
+
+Fast-forward
+
+ AFNetworking/2.2.0/AFNetworking.podspec            | 58 +++++++++++++++++
+
+ AGGeometryKit/0.1.8.6/AGGeometryKit.podspec        | 27 ++++++++
+
+ APAddressBook/0.0.5/APAddressBook.podspec          | 14 ++++
+
+ AdBrixSDK/3.1.2/AdBrixSDK.podspec                  | 24 +++++++
+
+ AdPopcornSDK/3.1.2/AdPopcornSDK.podspec            | 25 ++++++++
+
+ .../1.0.1/BTTitlePaginationView.podspec            | 13 ++++
+
+ BlockRSSParser/2.1/BlockRSSParser.podspec          |  6 +-
+
+ CNSKit/1.0.9/CNSKit.podspec                        | 13 ++++
+
+ CTFeedback/1.0.10/CTFeedback.podspec               | 14 ++++
+
+ Colours/5.1.1/Colours.podspec                      | 17 +++++
+
+ .../2.1.6/CrashlyticsFramework.podspec             | 33 ++++++++--
+
+ DMEBottomView/0.3.0/DMEBottomView.podspec          | 15 +++++
+
+ .../1.0.0/DateCellsController.podspec              | 16 +++++
+
+ .../1.0.1/DateCellsController.podspec              | 16 +++++
+
+ .../0.1/EMVerticalSegmentedControl.podspec         | 18 ++++++
+
+ ETA-SDK/2.1.0/ETA-SDK.podspec                      | 26 ++++++++
+
+ ETA-SDK/2.1.1/ETA-SDK.podspec                      | 26 ++++++++
+
+ ETA-SDK/2.2.0/ETA-SDK.podspec                      | 26 ++++++++
+
+ FMGrowingTextView/0.0.3/FMGrowingTextView.podspec  | 14 ++++
+
+ FRDLivelyButton/1.0.0/FRDLivelyButton.podspec      | 15 +++++
+
+ Fiorite/0.0.8/Fiorite.podspec                      | 29 +++++++++
+
+ .../1.0.0/GAI-AutomaticSessionManagement.podspec   | 21 ++++++
+
+ GPAC4iOS/0.1.0/GPAC4iOS.podspec                    | 27 ++++++++
+
+ GVGradientView/1.0.3/GVGradientView.podspec        | 13 ++++
+
+ Haneke/0.0.2/Haneke.podspec                        | 12 ++++
+
+ ITProgressBar/0.0.1/ITProgressBar.podspec          | 25 ++++++++
+
+ KVOController/1.0.0/KVOController.podspec          | 14 ++++
+
+ KahunaSDK/1.0.359/KahunaSDK.podspec                | 24 +++++++
+
+ MRProgress/0.4.0/MRProgress.podspec                | 73 +++++++++++++++++++++
+
+ MRProgress/0.4.1/MRProgress.podspec                | 74 ++++++++++++++++++++++
+
+ Malcom/2.0.12/Malcom.podspec                       | 16 +++++
+
+ .../4.0.0/Moodstocks-iOS-SDK.podspec               | 19 ++++++
+
+ NRTextTransitions/0.1.0/NRTextTransitions.podspec  | 18 ++++++
+
+ NRTouchPoints/0.1.0/NRTouchPoints.podspec          |  3 +-
+
+ NSURL+Gravatar/1.0.0/NSURL+Gravatar.podspec        | 23 +++++++
+
+ NUI/0.5.3/NUI.podspec                              | 18 ++++++
+
+ Node/3.5.7/Node.podspec                            | 36 +++++++++++
+
+ PayPal-iOS-SDK/2.0.1/PayPal-iOS-SDK.podspec        | 17 +++++
+
+ PixateFreestyle/2.1/PixateFreestyle.podspec        |  4 +-
+
+ PocketSocket/0.6.1/PocketSocket.podspec            | 20 ++++++
+
+ Pushwoosh/2.0.1/Pushwoosh.podspec                  | 23 +++++++
+
+ .../0.2.5/RPFloatingPlaceholders.podspec           | 12 ++++
+
+ RZCellSizeManager/1.0.0/RZCellSizeManager.podspec  | 21 ++++++
+
+ RemoteConfig/1.5.0/RemoteConfig.podspec            | 14 ++++
+
+ Routable/0.0.6/Routable.podspec                    | 13 ++++
+
+ SBPickerSelector/1.0.0/SBPickerSelector.podspec    | 23 +++++++
+
+ SDCTextField/1.0.2/SDCTextField.podspec            | 12 ++++
+
+ STSpriteKit/0.2.1/STSpriteKit.podspec              | 20 ++++++
+
+ TEDLocalization/1.0.0/TEDLocalization.podspec      | 14 ++++
+
+ TS2MP4/0.1.0/TS2MP4.podspec                        | 34 ++++++++++
+
+ Tr8n/0.1.7/Tr8n.podspec                            | 53 ++++++++++++++++
+
+ UITableViewHelper/0.0.5/UITableViewHelper.podspec  | 15 +++++
+
+ UITextField+Shake/0.2/UITextField+Shake.podspec    | 12 ++++
+
+ UnionFind/1.0.1/UnionFind.podspec                  | 23 +++++++
+
+ .../0.3.0/VBValenciaOpenData.podspec               | 31 +++++++++
+
+ .../1.1.1/VENCalculatorInputView.podspec           | 20 ++++++
+
+ WEPopover/1.0.0/WEPopover.podspec                  | 16 +++++
+
+ WZLog/0.0.1/WZLog.podspec                          | 29 +++++++++
+
+ 58 files changed, 1277 insertions(+), 10 deletions(-)
+
+ create mode 100644 AFNetworking/2.2.0/AFNetworking.podspec
+
+ create mode 100755 AGGeometryKit/0.1.8.6/AGGeometryKit.podspec
+
+ create mode 100644 APAddressBook/0.0.5/APAddressBook.podspec
+
+ create mode 100644 AdBrixSDK/3.1.2/AdBrixSDK.podspec
+
+ create mode 100644 AdPopcornSDK/3.1.2/AdPopcornSDK.podspec
+
+ create mode 100644 BTTitlePaginationView/1.0.1/BTTitlePaginationView.podspec
+
+ create mode 100644 CNSKit/1.0.9/CNSKit.podspec
+
+ create mode 100644 CTFeedback/1.0.10/CTFeedback.podspec
+
+ create mode 100755 Colours/5.1.1/Colours.podspec
+
+ create mode 100644 DMEBottomView/0.3.0/DMEBottomView.podspec
+
+ create mode 100644 DateCellsController/1.0.0/DateCellsController.podspec
+
+ create mode 100644 DateCellsController/1.0.1/DateCellsController.podspec
+
+ create mode 100644 EMVerticalSegmentedControl/0.1/EMVerticalSegmentedControl.podspec
+
+ create mode 100644 ETA-SDK/2.1.0/ETA-SDK.podspec
+
+ create mode 100644 ETA-SDK/2.1.1/ETA-SDK.podspec
+
+ create mode 100644 ETA-SDK/2.2.0/ETA-SDK.podspec
+
+ create mode 100644 FMGrowingTextView/0.0.3/FMGrowingTextView.podspec
+
+ create mode 100644 FRDLivelyButton/1.0.0/FRDLivelyButton.podspec
+
+ create mode 100644 Fiorite/0.0.8/Fiorite.podspec
+
+ create mode 100644 GAI-AutomaticSessionManagement/1.0.0/GAI-AutomaticSessionManagement.podspec
+
+ create mode 100644 GPAC4iOS/0.1.0/GPAC4iOS.podspec
+
+ create mode 100644 GVGradientView/1.0.3/GVGradientView.podspec
+
+ create mode 100644 Haneke/0.0.2/Haneke.podspec
+
+ create mode 100644 ITProgressBar/0.0.1/ITProgressBar.podspec
+
+ create mode 100644 KVOController/1.0.0/KVOController.podspec
+
+ create mode 100644 KahunaSDK/1.0.359/KahunaSDK.podspec
+
+ create mode 100644 MRProgress/0.4.0/MRProgress.podspec
+
+ create mode 100644 MRProgress/0.4.1/MRProgress.podspec
+
+ create mode 100644 Malcom/2.0.12/Malcom.podspec
+
+ create mode 100644 Moodstocks-iOS-SDK/4.0.0/Moodstocks-iOS-SDK.podspec
+
+ create mode 100644 NRTextTransitions/0.1.0/NRTextTransitions.podspec
+
+ create mode 100644 NSURL+Gravatar/1.0.0/NSURL+Gravatar.podspec
+
+ create mode 100644 NUI/0.5.3/NUI.podspec
+
+ create mode 100644 Node/3.5.7/Node.podspec
+
+ create mode 100644 PayPal-iOS-SDK/2.0.1/PayPal-iOS-SDK.podspec
+
+ create mode 100644 PocketSocket/0.6.1/PocketSocket.podspec
+
+ create mode 100644 Pushwoosh/2.0.1/Pushwoosh.podspec
+
+ create mode 100644 RPFloatingPlaceholders/0.2.5/RPFloatingPlaceholders.podspec
+
+ create mode 100644 RZCellSizeManager/1.0.0/RZCellSizeManager.podspec
+
+ create mode 100644 RemoteConfig/1.5.0/RemoteConfig.podspec
+
+ create mode 100644 Routable/0.0.6/Routable.podspec
+
+ create mode 100644 SBPickerSelector/1.0.0/SBPickerSelector.podspec
+
+ create mode 100644 SDCTextField/1.0.2/SDCTextField.podspec
+
+ create mode 100644 STSpriteKit/0.2.1/STSpriteKit.podspec
+
+ create mode 100644 TEDLocalization/1.0.0/TEDLocalization.podspec
+
+ create mode 100644 TS2MP4/0.1.0/TS2MP4.podspec
+
+ create mode 100644 Tr8n/0.1.7/Tr8n.podspec
+
+ create mode 100644 UITableViewHelper/0.0.5/UITableViewHelper.podspec
+
+ create mode 100644 UITextField+Shake/0.2/UITextField+Shake.podspec
+
+ create mode 100644 UnionFind/1.0.1/UnionFind.podspec
+
+ create mode 100644 VBValenciaOpenData/0.3.0/VBValenciaOpenData.podspec
+
+ create mode 100644 VENCalculatorInputView/1.1.1/VENCalculatorInputView.podspec
+
+ create mode 100644 WEPopover/1.0.0/WEPopover.podspec
+
+ create mode 100644 WZLog/0.0.1/WZLog.podspec
+From https://github.com/CocoaPods/Specs
+
+   caa3650..bb5faff  master     -> origin/master
+Setup completed (read-only access)
