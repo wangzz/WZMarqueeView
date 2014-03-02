@@ -10,4 +10,7 @@
 
 @interface WZMarqueeView : UIView
 
+@property (nonatomic, strong) UILabel *lable;
+@property (nonatomic) NSTimeInterval duration;
+
 @end
