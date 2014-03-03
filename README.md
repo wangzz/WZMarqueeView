@@ -8,9 +8,9 @@ WZMarqueeView is a marquee view used in the iOS.It is a view expansion which con
 1.	Add the pod `WZMarqueeView`
  to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
 
-    ```ruby
-    	pod 'WZMarqueeView', '~> 1.0.0'
-  	```
+```ruby
+pod 'WZMarqueeView', '~> 1.0.0'
+```
 	
 2.	Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
 
