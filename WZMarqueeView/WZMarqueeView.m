@@ -82,18 +82,18 @@
     }
     
     [UIView animateWithDuration:_duration delay:0.0f options:UIViewAnimationOptionCurveLinear animations:^{
-        CGRect tickerFrame = _lable.frame;
-        if (tickerFrame.origin.x == 0) {
-            tickerFrame.origin.x = -(tickerFrame.size.width - self.frame.size.width);
-        } else if (tickerFrame.origin.x < 0) {
-            tickerFrame.origin.x = 0;
+        CGRect lableFrame = _lable.frame;
+        if (lableFrame.origin.x == 0) {
+            lableFrame.origin.x = -(lableFrame.size.width - self.frame.size.width);
+        } else if (lableFrame.origin.x < 0) {
+            lableFrame.origin.x = 0;
         }
         
-        [_lable setFrame:tickerFrame];
+        [_lable setFrame:lableFrame];
     } completion:^(BOOL finished) {
-        //        CGRect tickerFrame = _mainLable.frame;
-        //        tickerFrame.origin.x = _mainOriginX;
-        //        [_mainLable setFrame:tickerFrame];
+        //        CGRect lableFrame = _lable;
+        //        lableFrame.origin.x = _mainOriginX;
+        //        [_lable setFrame:tickerFrame];
         [self performSelector:@selector(startAnimation)
                    withObject:nil
                    afterDelay:0.5f];
