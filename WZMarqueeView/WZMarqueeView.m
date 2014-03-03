@@ -35,7 +35,7 @@
 
 - (void)dealloc
 {
-    [self removeObserver:_lable forKeyPath:@"text" context:nil];
+    [_lable removeObserver:self forKeyPath:@"text" context:nil];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath
@@ -77,7 +77,7 @@
 #pragma mark - Animation
 - (void)startAnimation
 {
-    if ((_lable.text.length <= 0) && (_lable.frame.size.width <= self.frame.size.width)) {
+    if ((_lable.text.length <= 0) || (_lable.frame.size.width <= self.frame.size.width)) {
         return;
     }
     
