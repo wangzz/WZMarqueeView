@@ -20,9 +20,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    WZMarqueeView *marqueeView = [[WZMarqueeView alloc] initWithFrame:CGRectMake(0, 100, 200, 40)];
-    marqueeView.backgroundColor = [UIColor grayColor];
-    marqueeView.lable.text = @"good good study day dya up.11good good study day dya up.22good good study day dya up.33";
+    WZMarqueeView *marqueeView = [[WZMarqueeView alloc] initWithFrame:CGRectMake(60, 100, 200, 40)];
+    marqueeView.lable.text = @"Good good study day day up.It is a WZMarqueeView demo";
+    marqueeView.duration = 7.0f;
     [self.view addSubview:marqueeView];
 }
 
