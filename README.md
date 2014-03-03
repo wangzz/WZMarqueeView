@@ -1,6 +1,6 @@
 #WZMarqueeView
 
-WZMarqueeView is a marquee view used in the iOS.It is a view expansion which contains a lable.We also can custom the animation duration by setting the `duration` variable,The default `duration` value is `5.0f`.
+WZMarqueeView is a marquee view used on iOS.It is a view expansion which contains a lable.We also can custom the animation duration by setting the `duration` variable,The default `duration` value is `5.0f`.
 
 #Getting Started
 
