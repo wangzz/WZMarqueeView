@@ -6,24 +6,21 @@ WZMarqueeView is a marquee view used in the iOS.It is a view expansion which con
 
 **Using [CocoaPods](http://cocoapods.org)**
 
-1.	Add the pod `WZMarqueeView`
- to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
-
+ 1.Add the pod `WZMarqueeView` to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
 ```ruby
 pod 'WZMarqueeView', '~> 1.0.0'
 ```
-
-2.	Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
-
-3. 	`#import WZMarqueeView.h` wherever you want to use the API.
+ 2.Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
+ 
+ 3.`#import WZMarqueeView.h` wherever you want to use the API.
 
 **Manually from GitHub**
 
-1.	Download the `WZMarqueeView.h` and `WZMarqueeView.m` files in th [Source directory](https://github.com/wangzz/WZMarqueeView/tree/master/WZMarqueeView)
+1.Download the `WZMarqueeView.h` and `WZMarqueeView.m` files in th [Source directory](https://github.com/wangzz/WZMarqueeView/tree/master/WZMarqueeView)
 
-2.	Add both files to your Xcode project.
+2.Add both files to your Xcode project.
 
-3. 	`#import WZMarqueeView.h` wherever you want to use the API.
+3.`#import WZMarqueeView.h` wherever you want to use the API.
 
 #Example Usage
 
