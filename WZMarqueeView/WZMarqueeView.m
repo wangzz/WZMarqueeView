@@ -44,7 +44,7 @@
                       context:(void*)context
 {
     if ([keyPath isEqualToString:@"text"]) {
-        NSString *text = [change valueForKey:@"new"];
+        NSString *text = [change valueForKey:NSKeyValueChangeNewKey];
         if ((text == nil) || (text.length <= 0)) {
             return;
         }
@@ -98,7 +98,6 @@
                    withObject:nil
                    afterDelay:0.5f];
     }];
-    
 }
 
 - (void)layoutSubviews
