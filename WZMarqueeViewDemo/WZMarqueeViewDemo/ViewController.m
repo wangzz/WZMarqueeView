@@ -23,7 +23,10 @@
     WZMarqueeView *marqueeView = [[WZMarqueeView alloc] initWithFrame:CGRectMake(60, 100, 200, 40)];
     marqueeView.lable.text = @"Good good study day day up.It is a WZMarqueeView demo";
     marqueeView.duration = 7.0f;
+    marqueeView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:marqueeView];
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)didReceiveMemoryWarning
