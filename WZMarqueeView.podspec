@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WZMarqueeView"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.summary          = "A marquee view used on iOS."
   s.description      = <<-DESC
                        It is a marquee view used on iOS, which implement by Objective-C.
