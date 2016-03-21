@@ -13,4 +13,6 @@
 @property (nonatomic, strong) UILabel *lable;
 @property (nonatomic) NSTimeInterval duration;
 
+- (void)showInView:(UIView *)view;
+
 @end

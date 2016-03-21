@@ -12,7 +12,7 @@ WZMarqueeView is a marquee view used on iOS.It is a view expansion which contain
 
  1.Add the pod `WZMarqueeView` to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html).
 ```ruby
-pod 'WZMarqueeView', '~> 1.0.0'
+pod 'WZMarqueeView', '~> 2.0.0'
 ```
  2.Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
  
@@ -40,7 +40,8 @@ The way to create a WZMarqueeView is:
 WZMarqueeView *marqueeView = [[WZMarqueeView alloc] initWithFrame:CGRectMake(60, 100, 200, 40)];
 marqueeView.lable.text = @"Good good study day day up.It is a WZMarqueeView demo";
 marqueeView.duration = 7.0f;
-[self.view addSubview:marqueeView];
+marqueeView.backgroundColor = [UIColor whiteColor];
+[marqueeView showInView:self.view];
 ```
 
 #License

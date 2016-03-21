@@ -6,16 +6,15 @@
 //  Copyright (c) 2014年 foogry. All rights reserved.
 //
 
-#ifndef SYSTEM_VERSION_LESS_THAN
-#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#ifndef WZ_SYSTEM_VERSION_LESS_THAN
+#define WZ_SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #endif
 
 #import "WZMarqueeView.h"
 
 @implementation WZMarqueeView
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
@@ -33,16 +32,20 @@
     return self;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_lable removeObserver:self forKeyPath:@"text" context:nil];
 }
+
+- (void)layoutSubviews {
+    _lable.frame = CGRectMake(0, 0, _lable.frame.size.width, self.frame.size.height);
+}
+
+#pragma mark - KVO
 
 -(void)observeValueForKeyPath:(NSString *)keyPath
                      ofObject:(id)object
                        change:(NSDictionary *)change
-                      context:(void*)context
-{
+                      context:(void*)context {
     if ([keyPath isEqualToString:@"text"]) {
         NSString *text = [change valueForKey:NSKeyValueChangeNewKey];
         if ((text == nil) || (text.length <= 0)) {
@@ -56,10 +59,27 @@
     }
 }
 
-- (CGSize)sizeWithFont:(UIFont *)font string:(NSString *)string
-{
+#pragma mark - Public
+
+- (void)showInView:(UIView *)view {
+    if (!view || ![view isKindOfClass:[UIView class]]) {
+        return;
+    }
+    
+    if (![view.subviews containsObject:self]) {
+        [view addSubview:self];
+    }
+    
+    [self performSelector:@selector(startAnimation)
+               withObject:nil
+               afterDelay:0.5f];
+}
+
+#pragma mark - Private
+
+- (CGSize)sizeWithFont:(UIFont *)font string:(NSString *)string {
     CGSize  size;
-    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+    if (WZ_SYSTEM_VERSION_LESS_THAN(@"7.0")) {
         size = [string sizeWithFont:font
                   constrainedToSize:CGSizeMake(1000, 200)
                       lineBreakMode:0];
@@ -74,9 +94,7 @@
     return size;
 }
 
-#pragma mark - Animation
-- (void)startAnimation
-{
+- (void)startAnimation {
     if ((_lable.text.length <= 0) || (_lable.frame.size.width <= self.frame.size.width)) {
         return;
     }
@@ -91,30 +109,11 @@
         
         [_lable setFrame:lableFrame];
     } completion:^(BOOL finished) {
-        //        CGRect lableFrame = _lable;
-        //        lableFrame.origin.x = _mainOriginX;
-        //        [_lable setFrame:tickerFrame];
         [self performSelector:@selector(startAnimation)
                    withObject:nil
                    afterDelay:0.5f];
     }];
 }
 
-- (void)layoutSubviews
-{
-    _lable.frame = CGRectMake(0, 0, _lable.frame.size.width, self.frame.size.height);
-    [self startAnimation];
-}
-
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

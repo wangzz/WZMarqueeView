@@ -24,7 +24,7 @@
     marqueeView.lable.text = @"Good good study day day up.It is a WZMarqueeView demo";
     marqueeView.duration = 7.0f;
     marqueeView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:marqueeView];
+    [marqueeView showInView:self.view];
     
     self.view.backgroundColor = [UIColor lightGrayColor];
 }
